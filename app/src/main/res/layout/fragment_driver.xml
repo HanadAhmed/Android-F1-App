@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RaceFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="#9e9e9e"
+            android:id="@+id/linlay1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewDriverPositionTitle"
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5dp"
+                    android:text="#"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:fontFamily="@font/f1_reg"
+                    android:textColor="#1e1e1e"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textViewDriverConstuctorTitle"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/f1_reg"
+                    android:text="Driver/Team"
+                    android:textColor="#1e1e1e"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/textViewTimeTitle"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/f1_reg"
+                    android:text="Wins"
+                    android:textColor="#1e1e1e"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/textViewDriverPointsTitle"
+                    android:layout_width="73dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/f1_reg"
+                    android:text="Points"
+                    android:textColor="#1e1e1e"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/textViewDriverFavouriteTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/f1_reg"
+                    android:text="Add Fav"
+                    android:textColor="#1e1e1e"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/driverlistView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linlay1"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</FrameLayout>
